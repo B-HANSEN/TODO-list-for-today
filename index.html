@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM project</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">TODO list</h1>
+                <p>All the TODOs for today</p>
+                <form id="search-todos">
+                    <input type="text" placeholder="Search todos..." />
+                </form>
+	    	</div>
+	    </header>
+	    <div id="todo-list">
+	    	<h2 class="title"></h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Call Jennifer for Saturday dinner</span>
+	    			<span class="delete">delete item</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Do grocery shopping for long weekend</span>
+	    			<span class="delete">delete item</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Pick up car from garage</span>
+	    			<span class="delete">delete item</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Schedule dentist checkup appointment</span>
+	    			<span class="delete">delete item</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-todo">
+            <input type="checkbox" id="hide" />
+            <label for="hide" id="hideText">Hide all todos</label>
+            <input type="text" placeholder="Add a todo..." />
+            <button>Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="info active">About</li>
+          <li data-target="#contact" class="info">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>About us</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Contact information</p>
+          <p>Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
